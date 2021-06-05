@@ -75,7 +75,51 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .row5 a{color:#179CFF; background-color:#EBEDEE;}
 
 /* ----------------------------------------------Generalise------------------------------------- */
-
+input{
+	width: 60%;
+	margin: 12px;
+	border: none;
+	border-bottom: 1px solid #000;
+	outline: none;
+}
+form{
+	border-right: solid 1px #333333;
+}
+form button {
+	left: -67px;
+	position: relative;
+	margin: 12px;
+	float: right;
+	outline: none;
+	border-radius: 9px;
+	width: 86px;
+	padding: 7px;
+	background-color: #85e1dc75;
+	border: none;
+}
+.contactus{
+	/* text-align: center; */
+}
+.contactus h1{
+	font-size: 2rem;
+	text-align: center;
+	 
+}
+.formdiv{
+	text-align: center;
+}
+.contactus label{
+	font: 1em sans-serif;
+}
+.na{
+	margin-left: 33px;
+}
+.em{
+	margin-left: 22px;
+}
+.mes{
+	margin-left: 18px;
+}
 #header, #container, #academiclinks, #footer{display:block; position:relative; width:90%; margin:0 auto;}
 #header{
 	height: 60px;

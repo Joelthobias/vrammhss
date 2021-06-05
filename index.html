@@ -1,8 +1,7 @@
 <!DOCTYPE html >
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 <title>VRAMMHSS THAIKKAD</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
@@ -126,7 +125,15 @@ $(document).ready(function() {
 <div class="wrapper">
   <div id="footer" class="clear"> 
     <!-- ####################################################################################################### -->
-    
+    <div class="contactus">
+      <h1 class="con">Contact us</h1>
+      <form action="" style="width: 50%;" method="get" class="form">
+        <div class="formdiv"><label for="name">Name </label><input type="text" placeholder="Name" class="na" name="name"></div>
+        <div class="formdiv"><label for="Email"> Email id</label><input type="text" placeholder="Email Id" class="em" name="Email"></div>
+        <div class="formdiv"><label for="Message">Message</label> <input type="text" placeholder="Message" class="mes" name="Message"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     <!-- ####################################################################################################### --> 
   </div>
 </div>
