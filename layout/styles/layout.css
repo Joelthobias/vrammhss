@@ -208,7 +208,10 @@ form button:hover {
 	  float: left;
   }
 }
-
+.aaa{
+	margin-top: -56px;
+	margin-left: 57px;
+}
 @media (min-width: 992px) {
 	.container {
 		width: 900px !important;
@@ -241,7 +244,7 @@ h1, h2, h3, h4 {
 .h2, h2 {
 	font-size: 30px !important;
 }
-.h1, .h2, .h3, h1, h2, h3 {
+ .h2, .h3, h2, h3 {
 	margin-top: 20px !important;
 	margin-bottom: 10px;
 }
@@ -249,6 +252,10 @@ h1, h2, h3, h4 {
 
     padding-top: 20px !important;
 
+}
+a:hover{
+	color: inherit !important;
+	text-decoration: none !important;
 }
 address {
     margin-bottom: 20px;

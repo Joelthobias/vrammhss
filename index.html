@@ -43,7 +43,7 @@ $(document).ready(function() {
         <a href="#">Gallery</a>
       </li>
       <li class="l">
-        <a href="#">Contact Us</a>
+        <a href="#contact">Contact Us</a>
       </li>
     </ul>    
   </div>
@@ -174,19 +174,31 @@ $(document).ready(function() {
 <section id="contact">
 			<div class="overlay">
 				<div class="container">
+            <h2 class="text-uppercase">Contact Us</h2>
+
 					<div class="row">
 						<div class="col-md-6 wow fadeInUp animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-							<h2 class="text-uppercase">Contact Us</h2>
+							
 							<p> </p>
 							<address>
-								<p><i class="fas fa-map-marker-alt"></i><a href="https://oxygenweb.ml/">Oxygenweb.ml</a></p>
-								<p><i class="fas fa-phone-alt"></i><a href="tel:+919142663866">9142663866</a> </p>
-								<p><i class="fas fa-envelope"></i> <a href="mailto:joelthobias447@gmail.com">joelthobias447@gmail.com</a> </p>
+								<p>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="aaa">
+                    
+                        THAIKKAD SOUTH <br>
+                        BRAHMAKULAM P.O <br>
+                        THRISSUR DT, KERALA <br>
+                        PIN: 680104
+                      
+                  </div>
+                </p>
+								<p><i class="fas fa-phone-alt"></i><a href="tel:04872550321">0487 2550321</a> </p>
+								<p><i class="fas fa-envelope"></i> <a href="mailto:appumasterhss@gmail.com">appumasterhss@gmail.com</a> </p>
 							</address>
 						</div>
 						<div class="col-md-6 wow fadeInUp animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 							<div class="contact-form">
-								<form id="submit-form" method="post" novalidate="novalidate">
+								<form id="submit-form" method="post" >
 									<div class="col-md-6">
 										<input type="text" class="form-control" name="name" required placeholder="Name">
 									</div>
@@ -209,5 +221,50 @@ $(document).ready(function() {
 				</div>
 			</div>
 		</section>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script>
+		$("#submit-form").validate({
+      rules:{
+            name:{
+                required:true,
+                minlength:4
+            },
+            email:{
+                required:true,
+                email: true
+            },
+            message: {
+            required:true,
+            minlength: 4
+		    }
+        }
+    })
+		</script>
+    <script>
+
+
+    $("#submit-form").submit((e) => {
+        e.preventDefault()
+        if ($("#submit-form").valid()) {
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbzNEyJ2nMVY8RiZ_CK9XFFDHBRXYNi_756dQcd7BO_sa0Ss6bSXN7hxf6kBCaOqGJVHLQ/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    // window.location.href="https://google.com"
+                },
+                error: function (err) {
+                    alert("Something Error")
+                    console.log(err);
+                }
+            })
+        }
+
+    })
+</script>
+
 </body>
 </html>
