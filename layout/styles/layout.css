@@ -72,6 +72,11 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .row4{background:url("images/quicknav_bg.gif") top left repeat-x; border-top:1px solid #BCBCBC; border-bottom:1px solid #BCBCBC;}
 .row5{color:#848C92; background-color:#EBEDEE;}
 .row5 a{color:#179CFF; background-color:#EBEDEE;}
+.row5 #container {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 /* ----------------------------------------------Generalise------------------------------------- */
 /* input {
@@ -207,7 +212,11 @@ form button:hover {
   .col-md-6{
 	  float: left;
   }
+
 }
+  .he{
+	  font-size: 1.5rem;
+  }
 .aaa{
 	margin-top: -56px;
 	margin-left: 57px;
