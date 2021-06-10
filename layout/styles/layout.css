@@ -53,14 +53,26 @@ body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman"
 
 
 @media(max-width:568px){
-	#contact {
-		background-image: url('s5.png');
-		background-size: cover;
-		color: #fff !important;
-		background-position: center ;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-	}
+
+.carousel-item:after {
+  content:"";
+  display:none;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity: 1;
+  background:rgba(0,0,0,0.7);
+}
+.fea img{
+	width: 0rem;
+}
+.fea h4{
+	margin-top: .8rem;
+	color: #fff;
+	text-transform: uppercase;
+}
 }
 @media(max-width:992px){
 	.fea{
@@ -303,3 +315,11 @@ textarea.form-control {
   opacity: .5;
   background:rgba(0,0,0,0.7);
 }
+	#contact {
+		background-image: url('s5.png');
+		background-size: cover;
+		color: #fff !important;
+		background-position: center ;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
