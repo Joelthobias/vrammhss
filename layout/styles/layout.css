@@ -13,23 +13,16 @@ body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman"
   }
 .carousel-item:after {
   content:"";
-  display:none;
+  display:block;
   position:absolute;
   top:0;
   bottom:0;
   left:0;
   right:0;
-  opacity: 1;
+  opacity: .5;
   background:rgba(0,0,0,0.7);
 }
-.fea img{
-	width: 0rem;
-}
-.fea h4{
-	margin-top: .8rem;
-	color: #fff;
-	text-transform: uppercase;
-}
+
 }
 @media (min-width: 992px) {
 	.container {
@@ -304,17 +297,7 @@ textarea.form-control {
 #container .readmore{display:block; width:100%; text-align:right;}
 #content{display:block; float:left; width:630px;}
 
-.carousel-item:after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  opacity: .5;
-  background:rgba(0,0,0,0.7);
-}
+
 	#contact {
 		background-image: url('s5.png');
 		background-size: cover;
