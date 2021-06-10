@@ -115,7 +115,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 }
  
 .fea .fas{
-	font-size: 4rem;
+	font-size: 1rem;
 }
 .fea img{
 	width: 4.8rem;
@@ -124,6 +124,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	margin-top: 2rem;
 	color: #fff;
 	text-transform: uppercase;
+        font-size:.8rem;
 }
 .fea p{
 	text-align: center	;
