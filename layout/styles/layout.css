@@ -74,6 +74,9 @@ body {
     #homepage p {
         font-size: 0.8rem;
     }
+    .about{
+        font-style: 0.8rem;
+    }
 }
 @media(max-width:449px) {
     .w-100 {
@@ -303,6 +306,15 @@ address {
 
     height: 50px;
 
+}
+.navbar{
+    font-weight: bolder;
+    color: #000;
+}
+.about{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .form-control {
     display: block;
