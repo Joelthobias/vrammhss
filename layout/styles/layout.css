@@ -10,7 +10,9 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #333333;
 }
-
+.hf{
+    height: 80vh;
+}
 
 @media(min-width: 768px) {
     .container {
@@ -77,11 +79,19 @@ body {
     .about{
         font-style: 0.8rem;
     }
+    .hf{
+        height:60vh;
+    }    
 }
 @media(max-width:449px) {
     .w-100 {
         height: 170px;
     }
+}
+@media(max-width:778px){
+    .hf{
+        height:32vh;
+    }    
 }
 .clear:after {
     content: ".";
@@ -184,7 +194,7 @@ div.wrapper h6 {
 }
 #feat {
     margin-top: 5rem;
-    background-image: url('../../images/s1.png');
+    background-image: url('../../images/s2.png');
     background-size: cover;
     color: #fff !important;
     background-position: center center;
@@ -477,7 +487,7 @@ textarea.form-control {
     background-color: #EBEDEE;
     margin: 0 0 15px;
     padding: 0 0 10px;
-    border-bottom: 1px solid #D8D8D8;
+    /* border-bottom: 1px solid #D8D8D8; */
 }
 
 #container .readmore {
