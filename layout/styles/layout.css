@@ -166,7 +166,7 @@ div.wrapper h6 {
 }
 .row5 #container {
     width: 90%;
-    padding-left: 15px;
+    padding-left: 68px;
     padding-right: 15px;
 }
 
@@ -223,6 +223,23 @@ div.wrapper h6 {
     background-repeat: no-repeat;
 
 }
+#teachers{
+    margin-top: -100px;
+}
+@media (max-width:800px){
+#teachers{
+    margin-top: 0px !important;
+}
+.card >img {
+    height: 192px !important;
+}
+.card {
+    border: none !important;
+    outline: none;
+    width: 12rem !important;
+    margin: 0 auto;
+}
+}
 .feats {
     padding-top: 5rem;
 
@@ -234,6 +251,21 @@ div.wrapper h6 {
 	margin-left: auto !important;
 	margin-right: auto !important;
 } */
+.card >img{
+    height: 150px;
+}
+.card{
+    border: none !important;
+    outline: none;
+    width: 9rem ;
+     margin: 0 auto;
+}
+.card-title{
+    white-space: nowrap;
+    font-size: .9rem;
+    font-weight: bold;
+    margin: 0 auto !important;
+}
 #contact {
 
     background-image: url('s5.png');
