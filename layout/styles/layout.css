@@ -251,6 +251,15 @@ div.wrapper h6 {
 	margin-left: auto !important;
 	margin-right: auto !important;
 } */
+
+
+/* courses and units  */
+.has{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 .card >img{
     height: 150px;
 }
