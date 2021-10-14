@@ -18,6 +18,9 @@ body {
     .container {
         width: 700px !important;
     }
+    .candunit table{
+        margin-left: 15%;
+    }    
     .col-md-6 {
         float: left;
     }
@@ -91,7 +94,8 @@ body {
 @media(max-width:778px){
     .hf{
         height:32vh;
-    }    
+    }
+
 }
 .clear:after {
     content: ".";
@@ -166,8 +170,7 @@ div.wrapper h6 {
 }
 .row5 #container {
     width: 90%;
-    padding-left: 68px;
-    padding-right: 15px;
+
 }
 
 /* ----------------------------------------------Generalise------------------------------------- */
