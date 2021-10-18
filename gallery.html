@@ -51,9 +51,13 @@
                 <div class="col-sm-6 col-md-4 col-xl-3 my-1 mx-auto">
                     <img src="images/s3.jpeg"  class="img-fluid hover-shadow cursor">
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3 my-1">
+                <div class="col-sm-6 col-md-4 col-xl-3 my-1 h" onclick="window.location.href='https://www.youtube.com/watch?v=VsaqPH0CfZo'">
+                    <div class="middle">
+                        <div class="text" >Visit</div>
+                    </div>
                     <img src="images/s4.jpeg"  class="img-fluid hover-shadow cursor">
                 </div>
+
                 <div class="col-sm-6 col-md-4 col-xl-3 my-1 mx-auto">
                     <img src="images/s5.png"  class="img-fluid hover-shadow cursor">
                 </div>
@@ -67,14 +71,24 @@
                     <img src="images/slider plus/img3.jpg"  class="img-fluid hover-shadow cursor">
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3 my-1 mx-auto">
-                    <img src="images/slider plus/img4.jpg"  class="img-fluid hover-shadow cursor">
-                </div>
-                <div class="col-sm-6 col-md-4 col-xl-3 my-1 mx-auto">
-                    <img src="images/slider plus/img5.jpeg"  class="img-fluid hover-shadow cursor">
-                </div>
-                <div class="col-sm-6 col-md-4 col-xl-3 my-1 mx-auto">
                     <img src="images/slider plus/img6.jpeg"  class="img-fluid hover-shadow cursor">
                 </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 my-1 mx-auto h" onclick="window.location.href='https://youtu.be/aXUTfvk3dVA'" >
+                    <img src="images/slider plus/img4.jpg"  class="img-fluid hover-shadow cursor">
+                    <div class="middle">
+                        <div class="text">Visit</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 my-1 mx-auto ">
+                    <img src="images/slider plus/img5.jpeg"  class="img-fluid hover-shadow cursor">
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 my-1 mx-auto h">
+                    <img src="images/img.webp"  class="img-fluid hover-shadow cursor">
+                    <div class="middle" onclick="window.location.href='https://youtu.be/5-q8K_VcghE'">
+                        <div class="text">Visit</div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <style>
@@ -84,6 +98,31 @@
             }
             .hover-shadow:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 30px;
+            }
+
+            .h:hover img {
+            opacity: 0.3;
+            }
+
+            .h:hover .middle {
+            opacity: 1;
+            }
+
+            .text {
+            color: #000;
+            font-size: 20px;
+            
             }
         </style>
         
