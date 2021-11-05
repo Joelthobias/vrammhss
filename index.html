@@ -439,8 +439,22 @@
 								<p><i class="fas fa-envelope"></i> <a href="mailto:appumasterhss@gmail.com">appumasterhss@gmail.com</a> </p>
 							</address>
 						</div>
-            <h6>Disabling contct form for a while due to some techincal issues</h6>
-						<!-- <div class="col-md-6 wow fadeInUp animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+            <script>
+                /* Add "https://api.ipify.org?format=json" statement
+                this will communicate with the ipify servers in
+                order to retrieve the IP address $.getJSON will
+                load JSON-encoded data from the server using a
+                GET HTTP request */
+
+                $.getJSON("https://api.ipify.org?format=json", function (data) { // Setting text of element P with id gfg
+                    $("#gfg").val(data.ip);
+                })
+
+            </script>
+
+						<div class="col-md-6 wow fadeInUp animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 							<div class="contact-form">
 								<form id="submit-form" method="post" >
 									<div class="col-md-6">
@@ -455,17 +469,20 @@
 									<div class="col-md-12">
 										<textarea class="form-control" placeholder="message" name="message" rows="4"></textarea>
 									</div>
+                  <div class="d-none" >
+                    <input type="text" value="" name="ip" id="gfg">
+                  </div>
 									<div class="col-md-8">
 										<input type="submit" class="form-control text-uppercase" value="Send">
 									</div>
 								</form>
 							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-<!-- <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
     <script>
 		$("#submit-form").validate({
@@ -484,8 +501,8 @@
 		    }
         }
     })
-		</script> -->
-    <!-- <script>
+		</script>
+    <script>
 
 
     $("#submit-form").submit((e) => {
@@ -508,7 +525,7 @@
         }
 
     })
-</script> -->
+</script>
 
 </body>
 </html>
