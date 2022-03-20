@@ -10,6 +10,11 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #333333;
 }
+
+div>a>span{
+    color: #fff !important;
+}
+
 .hf{
     height: 80vh;
 }
@@ -226,9 +231,9 @@ div.wrapper h6 {
     background-repeat: no-repeat;
 
 }
-#teachers{
+/* #teachers{
     margin-top: -100px;
-}
+} */
 @media (max-width:800px){
 #teachers{
     margin-top: 0px !important;
@@ -411,6 +416,26 @@ address {
 }
 textarea.form-control {
     height: auto;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+.add:last-child{
+    padding-bottom: 1.5rem;
+}
+.ads{
+    
+    border: #fff solid 2px;
+}
+@media(min-width:968px){
+    .add:first-child{
+        justify-content: end;
+    }
+    .add:last-child{
+        justify-content: initial;
+    }
 }
 .col,
 .col-1,
