@@ -423,10 +423,7 @@ textarea.form-control {
 .add:last-child{
     padding-bottom: 1.5rem;
 }
-.ads{
-    
-    border: #fff solid 2px;
-}
+
 @media(min-width:968px){
     .add:first-child{
         justify-content: end;
