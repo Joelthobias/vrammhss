@@ -423,7 +423,10 @@ textarea.form-control {
 .add:last-child{
     padding-bottom: 1.5rem;
 }
-
+.nav-link h1 {
+	font-size: 17px;
+	font-weight: bold;
+}
 @media(min-width:968px){
     .add:first-child{
         justify-content: end;
